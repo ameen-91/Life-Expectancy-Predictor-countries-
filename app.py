@@ -10,9 +10,9 @@ st.title("Life Expectancy Predictor")
 
 Birth_Rate = st.text_input("Birth Rate")
 Fertility_Rate = st.text_input("Fertility Rate")
-Infant_mortality = st.text_input("Infant mortality")
-Maternal_mortality_ratio = st.text_input("Maternal mortality ratio")
-Physicians_per_thousand = st.text_input("Physicians per thousand")
+Infant_mortality = st.text_input("Infant mortality per 1000 births")
+Maternal_mortality_ratio = st.text_input("Maternal mortality ratio per 1000 births")
+Physicians_per_thousand = st.text_input("Physicians per 1000")
 
 
 k = st.button("Predict")
