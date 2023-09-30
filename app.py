@@ -1,6 +1,6 @@
 import streamlit as st
 import pickle as pk
-from sklearn.tree import DecisionTreeRegressor
+from sklearn.linear_model import LinearRegression
 import numpy as np
 import pandas as pd
 
@@ -22,5 +22,5 @@ if k:
     x = pd.DataFrame([[Birth_Rate,Fertility_Rate,Infant_mortality,Maternal_mortality_ratio,Physicians_per_thousand]])
     x.columns = ["Birth Rate","Fertility Rate","Infant mortality","Maternal mortality ratio","Physicians per thousand"]
     prediction = model.predict(x)
-    st.markdown(prediction)
+    st.markdown(np.round(prediction[0],2))
 
